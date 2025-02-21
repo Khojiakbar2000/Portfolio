@@ -1,0 +1,21 @@
+{
+    "name": "John",
+    "profession": "Web Developer",
+    "age": 25,
+    "residence": "Seoul, South Korea",
+    "address": "123 Tech Street, Seoul",
+    "languages": ["English", "Korean","Japan"],
+    "skills": ["HTML", "CSS", "JavaScript", "Python", "Node.js"],
+    "extraskills": ["Git", "Docker", "SQL"],
+    "workplace": "Tech Solutions Co.",
+    "service_desc": "Providing innovative web development and IT solutions.",
+    "about_me": "A passionate web developer with a focus on building user-friendly, responsive, and performant websites.",
+    "city": "Seoul",
+    "title": "Full Stack Developer",
+    "flower_desc": "A symbol of beauty and love, representing elegance and grace.",
+    "flower_name": "Rose",
+    "flower_price": 50,
+    "famous_words": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "famous_name": "Winston Churchill"
+}
+  

@@ -1,4 +1,4 @@
-console.log("Jack Ma maslahatlari")
+/*console.log("Jack Ma maslahatlari")
 const list = [
     "yaxshi talaba boling", //10-20
      "togri boshliq tanlang va koproq xato qiling", //20-30
@@ -7,7 +7,7 @@ const list = [
      "yoshlarga investitsiya qiling",//50-60
      "endi dam oling , foydasi yoq endi",//70-80
 ];
-
+//ASYNC functions
 //async function maslahatBering(a) {
     //if(typeof a !== 'number') throw new Error("insert number", null)
         //else if(a<=20) return(null, list[0])
@@ -40,7 +40,7 @@ const list = [
     if(err) console.log('ERROR:', err)
         console.log("javob:", data);*/
     
-    //them.catch
+    //call via then.catch
     /*console.log('passed here 0')
     maslahatBering(25).then(data=>{
     console.log(`javob:`,data)
@@ -49,7 +49,7 @@ const list = [
 console.log(`javob:`,err)
     })
     console.log('passed here 1')*/
-
+    //call via async/awaitfunctions
     //async function run(){
         //let javob = await maslahatBering(65);
         //console.log(javob);
@@ -61,7 +61,8 @@ console.log(`javob:`,err)
     //}
     //run();
 
-    function maslahatBering(a, callback) {
+  //CALLBACK functions
+    /*function maslahatBering(a, callback) {
     if(typeof a !== 'number')callback("insert number", null)
         else if(a<=20) callback(null, list[0])
         else if(a>20 && a<=30)callback(null, list[1])
@@ -82,6 +83,26 @@ console.log(`javob:`,err)
         console.log(data)
     }
     })
-    console.log('passed here 1')
+    console.log('passed here 1')*/
+
+
+
+
+    //MITASK
+
+    function countLetter(letter,word) {
+        let count = 0;
+
+        for(let i = 0; i < word.length; i++) {
+            if (word[i] === letter) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    console.log(countLetter("i", "movie"))
+
+
  
 

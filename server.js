@@ -1,18 +1,20 @@
-const http = require("http")
-const mongodb = require("mongodb")
-const express = require ("express");
+const http = require("http");
+const mongodb = require("mongodb");
 
-const app = express();
+
 
 let db;
-const connectionString = "mongodb+srv://John:nyEqdng3t7co7Q6X@cluster0.smk9w.mongodb.net/Reja"
+const connectionString = "mongodb+srv://John:h0YRxxV2Wbc6Me4M@cluster0.oqaw0.mongodb.net/Reja"
 
-mongodb.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true,
+mongodb.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true
 }, (err, client) => {
     if(err)console.log("ERROR on connection MongoDB")
         else {
-    console.log("MongoDB connection succeed")
-    module.exports = client;
+        console.log("MongoDB connection succeed")
+        module.exports = client;
+
+        const app = require("./app");
+    
 
 
 

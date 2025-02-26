@@ -1,4 +1,4 @@
-console.log("Jack Ma maslahatlari")
+/*console.log("Jack Ma maslahatlari")
 const list = [
     "yaxshi talaba boling", //10-20
      "togri boshliq tanlang va koproq xato qiling", //20-30
@@ -36,4 +36,16 @@ const list = [
        
      }
 
-     run();
+     run();*/
+
+     function countLetter(letter,word){
+        let count = 0;
+        for(let i = 0; i<word.length; i++)
+            if (word[i] === letter ) {
+                count++
+            }
+            
+            return count;
+        }
+        console.log(countLetter("e","engineer")
+    )

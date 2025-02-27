@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reja</title>
     <link rel="stylesheet" 
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ff1BuGJpLSa9DKkMp0DgiMDm4iYMj70gZWKYbI706tWS" 
-          crossorigin="anonymous">
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ff1BuGJpLSa9DKkMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+    crossorigin="anonymous"
+    />
 </head>
 <body style="background-color: #b8bbd1;">
     <div class="container">
@@ -15,11 +16,11 @@
         </div>
 
         <div class="jumbotron p-3 shadow-sm">
-            <form id="create-form" action="/create-item" method="POST">
+            <form id="create-form" action="/create-item" method="post">
              <div class="d-flex align-items-center">
                 <input
                 id="create-field"
-                name="item"
+                name="reja"
                 autofocus
                 autocomplete="off"
                 class="form-control mr-3"
@@ -32,13 +33,34 @@
              </div>
             </form>
          </div>
-         
-   <button type="button"
-    class="btn-danger"
-    style="margin-left: 150px"
-    >
-    Delete
-   </button>
-   </body>
-</html>
 
+         <ul id="item-list" class="list-group pb-5">
+            <% items.map(function(item) { %>
+            <li 
+            class="list-group-item list-group-info d-flex align-items-center justify-content-between"
+            >
+            <span class="item-text"><%=item.reja %></span>
+            <div>
+                <button data-id="<%=item._id%>"
+                    class="edit-me btn btn-secondary btn-sm mr-1"
+                    >
+                Edit
+                </button>
+
+                <button 
+                data-id="<%=item._id%>"
+                class="delete-me btn btn-danger btn-sm"
+                >
+                Delete 
+                </button>
+            </div>
+
+        </li>
+        <% }) %>
+    </ul>
+
+    <button type="button" class="btn btn-danger" style="margin-left: 150px">
+        delete all
+        </button>
+        </body>
+        </html>

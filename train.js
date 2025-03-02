@@ -11,7 +11,7 @@ function countDigits(str){
     return count;
 }
 
-console.log(countDigits("ad2a5458"))
+console.log(countDigits("bro5how6"))
 
 
 
